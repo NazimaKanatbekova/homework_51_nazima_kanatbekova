@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Вас приветствует симулятор кота для начала введите имя кота</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Имя кота:</label>
+        <input type="text" id="name" name="name" placeholder="Введите имя кота" required>
+        <button type="submit">Создать</button>
+    </form>
+</body>
+</html>
